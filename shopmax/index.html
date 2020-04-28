@@ -18,14 +18,20 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <style>
+      .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+     }
+    </style>
   </head>
   <body>
   
   <div class="site-wrap">
     
 
-    <div class="site-navbar bg-white py-2">
+    <div class="site-navbar bg-white py-2" id="myHeader">
 
       <div class="search-wrap">
         <div class="container">
@@ -83,7 +89,7 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover" data-aos="fade">
+     <div class="site-blocks-cover" data-aos="fade">
       <div class="container">
         <div class="row">
           <div class="col-md-6 ml-auto order-md-2 align-self-start">
@@ -100,7 +106,7 @@
       </div>
     </div>
 
-    <div class="site-section">
+   <!-- <div class="site-section">
       <div class="container">
         <div class="title-section mb-5">
           <h2 class="text-uppercase"><span class="d-block">Discover</span> The Collections</h2>
@@ -300,9 +306,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-
+<!-- 
     <div class="site-blocks-cover inner-page py-5" data-aos="fade">
       <div class="container">
         <div class="row">
@@ -318,7 +324,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <footer class="site-footer custom-border-top">
       <div class="container">
@@ -405,6 +411,19 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
     
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
   </body>
 </html>
