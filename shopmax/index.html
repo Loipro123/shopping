@@ -19,10 +19,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .sticky {
-          position: fixed;
+      #myHeader {
+          position: sticky;
           top: 0;
-          width: 100%;
+          overflow: hidden;
+ 
      }
     </style>
   </head>
@@ -411,7 +412,7 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <script>
+  <!-- <script>
     window.onscroll = function() {myFunction()};
     
     var header = document.getElementById("myHeader");
@@ -424,6 +425,6 @@
         header.classList.remove("sticky");
       }
     }
-    </script>
+    </script> -->
   </body>
 </html>
