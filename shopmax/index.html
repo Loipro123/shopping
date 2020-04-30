@@ -25,13 +25,106 @@
           overflow: hidden;
  
      }
+     .product-item {
+        text-align: center;
+        cursor: pointer;
+      }
+        .product-item figure {
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 30px; }
+          .product-item figure:before {
+            z-index: 2;
+            -webkit-transition: .4s all ease;
+            -o-transition: .4s all ease;
+            transition: .4s all ease;
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            position: absolute;
+            content: "";
+            border: 4px solid #f16821;
+            left: 20px;
+            right: 20px;
+            top: 20px;
+            bottom: 20px;
+            opacity: 0;
+            visibility: hidden; }
+          .product-item figure img {
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); }
+        .product-item h3 {
+          font-size: 18px; }
+          .product-item h3 a {
+            color: #000; }
+            .product-item h3 a:hover {
+              color: #f16821; }
+        .product-item p {
+          line-height: 1.4;
+          font-size: 13px; }
+        .product-item .meta-icons {
+          margin-left: 5px;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          font-size: 13px; }
+          .product-item .meta-icons a {
+            font-size: 16px;
+            position: relative;
+            top: 2px; }
+        .product-item:hover figure:before {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); }
+        .product-item:hover figure img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+      
+      .product-item:hover .price{
+             display: block;
+      }
+      .product-item h3 a:hover .price{
+        display: block;
+      }
+      .wishlist span {
+        color: #e9ecef;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease; }
+      
+      .wishlist.active span, .wishlist:hover span {
+        color: #f23a2e; }
+      figure{
+        position: relative;
+      }
+      .price{
+        padding: 7px 14px;
+        border-radius: 3px;
+        background-color: white;
+        color: red;
+        text-transform: uppercase;
+        opacity: .7;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+        transition: all 1s ease-in-out;
+        display: none;
+      }
     </style>
   </head>
   <body>
   
   <div class="site-wrap">
     
-
     <div class="site-navbar bg-white py-2" id="myHeader">
 
       <div class="search-wrap">
@@ -53,23 +146,9 @@
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="has-children active">
+                <li class=" active">
                   <a href="index.html">Home</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Menu One</a></li>
-                    <li><a href="#">Menu Two</a></li>
-                    <li><a href="#">Menu Three</a></li>
-                    <li class="has-children">
-                      <a href="#">Sub Menu</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
-                
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">New Arrivals</a></li>
@@ -107,6 +186,42 @@
       </div>
     </div>
 
+    <!---->
+    <div class="site-section" id="products-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-6 text-center">
+            <h3 class="section-sub-title">Popular Products</h3>
+            <h2 class="section-title mb-3">Our Products</h2>
+           
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="product-item">
+              <figure>
+                <img src="images/son.png" alt="Image" class="img-fluid">
+                <span class="price">VND 699,000</span>
+              </figure>
+              
+              <div class="px-4">
+                <h3 style="font-size: 25px;color: black;">Lèvres Lip Balm</h3>
+                <div class="mb-3">
+                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
+                  <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
+                </div>
+                <p class="mb-4">Best selling lip balm in the country</p>
+                <div>
+                  <a href="#" class="btn btn-black mr-1 rounded-0">Order now</a>
+                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
    <!-- <div class="site-section">
       <div class="container">
         <div class="title-section mb-5">
