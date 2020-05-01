@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="css/aos.css">
 
@@ -188,118 +189,118 @@
     .site-blocks-cover .display-1 {
       font-size: 3rem; } }
       /**/
-      .testimonial-wrap .owl-nav {
-  display: none; }
-  .site-section {
-  padding: 2.5em 0; }
-  @media (min-width: 768px) {
-    .site-section {
-      padding: 5em 0; } }
-  .site-section.site-section-sm {
-    padding: 4em 0; }
+     /* ========= Testimonials ============= */
+     @media (max-width:991.98px) {
+     .padding {
+         padding: 1.5rem
+     }
+ }
 
-.site-section-heading {
-  padding-bottom: 20px;
-  margin-bottom: 0px;
-  position: relative;
-  font-size: 2.5rem; }
-  @media (min-width: 768px) {
-    .site-section-heading {
-      font-size: 3rem; } }
-      .slide-one-item.home-slider .owl-nav {
-  position: absolute !important;
-  top: 50% !important;
-  bottom: auto !important;
-  width: 100%; }
-  @media (max-width: 991.98px) {
-    .slide-one-item.home-slider .owl-nav {
-      display: none; } }
+ @media (max-width:767.98px) {
+     .padding {
+         padding: 1rem
+     }
+ }
 
-.slide-one-item.home-slider .owl-prev {
-  left: 10px !important; }
+ .padding {
+     padding: 5rem
+ }
 
-.slide-one-item.home-slider .owl-next {
-  right: 10px !important; }
+ .card {
+     position: relative;
+     display: flex;
+     width: 600px;
+     flex-direction: column;
+     min-width: 0;
+     word-wrap: break-word;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid #d2d2dc;
+     border-radius: 11px;
+     -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+     -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+     box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+ }
 
-.slide-one-item.home-slider .owl-prev, .slide-one-item.home-slider .owl-next {
-  color: #fff;
-  position: absolute !important;
-  top: 50%;
-  padding: 0px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
-  line-height: 0;
-  text-align: center;
-  font-size: 25px; }
-  @media (min-width: 768px) {
-    .slide-one-item.home-slider .owl-prev, .slide-one-item.home-slider .owl-next {
-      font-size: 25px; } }
-  .slide-one-item.home-slider .owl-prev > span, .slide-one-item.home-slider .owl-next > span {
-    position: absolute;
-    line-height: 0;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .slide-one-item.home-slider .owl-prev:hover, .slide-one-item.home-slider .owl-prev:focus, .slide-one-item.home-slider .owl-next:hover, .slide-one-item.home-slider .owl-next:focus {
-    background: black; }
+ .card .card-body {
+     padding: 1rem 1rem
+ }
 
-.slide-one-item.home-slider:hover .owl-nav, .slide-one-item.home-slider:focus .owl-nav, .slide-one-item.home-slider:active .owl-nav {
-  opacity: 10;
-  visibility: visible; }
+ .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
 
-.slide-one-item .owl-dots {
-  text-align: center; }
-  .slide-one-item .owl-dots .owl-dot {
-    display: inline-block;
-    margin: 4px; }
-    .slide-one-item .owl-dots .owl-dot span {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #dee2e6; }
-    .slide-one-item .owl-dots .owl-dot.active span {
-      background: #f16821; }
-      .block-13, .slide-one-item {
-  position: relative;
-  z-index: 1; }
-  .block-13 .owl-nav, .slide-one-item .owl-nav {
-    position: relative;
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
-    .block-13 .owl-nav .owl-prev, .block-13 .owl-nav .owl-next, .slide-one-item .owl-nav .owl-prev, .slide-one-item .owl-nav .owl-next {
-      position: relative;
-      display: inline-block;
-      padding: 20px;
-      font-size: 30px;
-      color: #000; }
-      .block-13 .owl-nav .owl-prev.disabled, .block-13 .owl-nav .owl-next.disabled, .slide-one-item .owl-nav .owl-prev.disabled, .slide-one-item .owl-nav .owl-next.disabled {
-        opacity: .2; }
-        .testimonial {
-  max-width: 800px;
-  margin: 0 auto !important;
-  text-align: center; }
-  .testimonial blockquote {
-    font-size: 1.5rem;
-    font-style: italic; }
-  .testimonial figure img {
-    max-width: 200px;
-    margin: 0 auto;
-    border-radius: 50%; }
+ p {
+     font-size: 0.875rem;
+     margin-bottom: .5rem;
+     line-height: 1.5rem
+ }
+
+ h4 {
+     line-height: .2 !important
+ }
+
+ .items {
+     width: 90%;
+     margin: 0px auto;
+     margin-top: 100px
+ }
+
+ .slick-slide {
+     margin: 10px
+ }
+
+ .media iframe,
+ .media-content {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     border: 0;
+     border-radius: inherit;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-color: rgba(120, 120, 120, .1);
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center
+ }
+
+ .media-content:before {
+     content: '';
+     position: absolute;
+     height: 10%;
+     width: 90%;
+     left: 5%;
+     bottom: 0;
+     background: inherit;
+     background-position-y: 100%;
+     filter: blur(10px)
+ }
+
+ .circle .media-content:before {
+     width: 40%;
+     left: 30%
+ }
+
+ .profile-image {
+     width: 100%;
+     height: 200px;
+     border-top-left-radius: 11px !important;
+     border-top-right-radius: 11px
+ }
+
+ .card-title {
+     font-size: 19px;
+     font-weight: 200
+ }
     </style>
   </head>
   <body>
@@ -454,78 +455,52 @@
       </div>
     </div>
    <!---->
-   <div class="site-section testimonial-wrap" id="testimonials-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <h3 class="section-sub-title">People Says</h3>
-          <h2 class="section-title mb-3">Testimonials</h2>
+   
+    <div class="container" style="border-bottom: 1px solid gray; padding-bottom: 50px; margin-top: -15px;">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-6 text-center">
+          <h3 class="section-sub-title">Team</h3>
+          <h2 class="section-title mb-3">Leaders</h2>
         </div>
       </div>
+   <div class="items" style="margin-top: 0px;">
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/13626472_499894273550006_2269876737060561097_n.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=5wKNu0lq1N8AX8LLAI-&_nc_ht=scontent-mia3-2.xx&oh=a05369234378d74107832de01a1b04d8&oe=5ED00AAF"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Ngan Dang</h5>
+            <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+        </div>
     </div>
-    <div class="slide-one-item home-slider owl-carousel">
-        <div>
-          <div class="testimonial">
-            <figure class="mb-4 d-block align-items-center justify-content-center">
-              <div><img src="images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-            </figure>
-            <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-            </blockquote>
-            <p class="text-black"><strong>John Smith</strong></p>
-
-            
-          </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Tikoh Amin</h5>
+            <p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
         </div>
-        <div>
-          <div class="testimonial">
-            
-            <figure class="mb-4 d-block align-items-center justify-content-center">
-              <div><img src="images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-            </figure>
-
-            <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-            </blockquote>
-            
-            <p class="text-black"><strong>Robert Aguilar</strong></p>
-            
-            
-          </div>
+    </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Malachi Lensing</h5>
+            <p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
         </div>
-
-        <div>
-          <div class="testimonial">
-            <figure class="mb-4 d-block align-items-center justify-content-center">
-              <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-            </figure>
-            <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-            </blockquote>
-            <p class="text-black"><strong>Roger Spears</strong></p>
-
-            
-          </div>
-         
+    </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Christian Isla</h5>
+            <p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
         </div>
-
-        <div>
-          <div class="testimonial">
-            <figure class="mb-4 d-block align-items-center justify-content-center">
-              <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
-            </figure>
-            <blockquote class="mb-3">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-            </blockquote>
-            <p class="text-black"><strong>Kyle McDonald</strong></p>
-
-            
-          </div>
-
+    </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
+        <div class="card-body">
+            <h5 class="card-title">Lori Charles</h5>
+            <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
         </div>
-
-      </div>
-  </div>
+    </div>
+</div>
+</div>
   <!---->
     <footer class="site-footer custom-border-top">
       <div class="container">
@@ -533,9 +508,9 @@
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
-              <p>Promo from  July 15 &mdash; 25, 2019</p>
+              <img src="images/son.png" alt="Image placeholder" class="img-fluid rounded mb-4">
+              <h3 class="font-weight-light  mb-0">Finding Your Perfect Lip Balm</h3>
+              <p>Promo from  May 1 &mdash; 25, 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -612,19 +587,47 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <!-- <script>
-    window.onscroll = function() {myFunction()};
-    
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-    </script> -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+$('.items').slick({
+dots: true,
+infinite: true,
+speed: 800,
+autoplay: true,
+autoplaySpeed: 1800,
+slidesToShow: 4,
+slidesToScroll: 4,
+responsive: [
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 3,
+infinite: true,
+dots: true
+}
+},
+{
+breakpoint: 600,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+},
+{
+breakpoint: 480,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+
+]
+});
+});
+    </script>
   </body>
 </html>
