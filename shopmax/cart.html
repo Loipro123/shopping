@@ -47,7 +47,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">NganDang</a>
+              <a href="index.html" class="js-logo-clone">Lèvres</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
@@ -57,10 +57,10 @@
                   <a href="index.html">Home</a>
                 </li>
                 
-                <li class="active"><a href="shop.html">Shop</a></li>
+                <li class="active"><a href="#">Shop</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">New Arrivals</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -104,51 +104,28 @@
                 <tbody>
                   <tr>
                     <td class="product-thumbnail">
-                      <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
+                      <img src="images/son.png" alt="Image" class="img-fluid">
                     </td>
                     <td class="product-name">
-                      <h2 class="h5 text-black">Top Up T-Shirt</h2>
+                      <h2 class="h5 text-black">Lèvres Lip Balm</h2>
                     </td>
-                    <td>$49.00</td>
+                    <td>VND <span id="price">699,000</span></td>
                     <td>
                       <div class="input-group mb-3" style="max-width: 120px;">
                         <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                          <button class="btn btn-outline-primary js-btn-minus" type="button" id="minus">&minus;</button>
                         </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <input type="text" class="form-control text-center" id="change" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" disabled>
                         <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                          <button class="btn btn-outline-primary js-btn-plus" type="button" id="plus">&plus;</button>
                         </div>
                       </div>
 
                     </td>
-                    <td>$49.00</td>
+                    <td>VND <span id="tableTotal">699,000</span></td>
                     <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
                   </tr>
 
-                  <tr>
-                    <td class="product-thumbnail">
-                      <img src="images/cloth_2.jpg" alt="Image" class="img-fluid">
-                    </td>
-                    <td class="product-name">
-                      <h2 class="h5 text-black">Polo Shirt</h2>
-                    </td>
-                    <td>$49.00</td>
-                    <td>
-                      <div class="input-group mb-3" style="max-width: 120px;">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
-                        </div>
-                        <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        <div class="input-group-append">
-                          <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
-                        </div>
-                      </div>
-
-                    </td>
-                    <td>$49.00</td>
-                    <td><a href="#" class="btn btn-primary height-auto btn-sm">X</a></td>
-                  </tr>
                 </tbody>
               </table>
             </div>
@@ -162,7 +139,7 @@
                 <button class="btn btn-primary btn-sm btn-block">Update Cart</button>
               </div>
               <div class="col-md-6">
-                <button class="btn btn-outline-primary btn-sm btn-block">Continue Shopping</button>
+                <a href="index.html"><button class="btn btn-outline-primary btn-sm btn-block">Continue Shopping</button></a>
               </div>
             </div>
             <div class="row">
@@ -174,7 +151,7 @@
                 <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
               </div>
               <div class="col-md-4">
-                <button class="btn btn-primary btn-sm px-4">Apply Coupon</button>
+                <button class="btn btn-primary btn-sm px-4" id="applyCoupon">Apply Coupon</button>
               </div>
             </div>
           </div>
@@ -191,15 +168,27 @@
                     <span class="text-black">Subtotal</span>
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
+                    <strong class="text-black">VND <span id="subTotal">699,000</span></strong>
                   </div>
                 </div>
+                <div id="salebox" style="display: none;">
+                  <h2 style="color: black;text-align: center;">-</h2>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <span class="text-black" style="color: red;">25% off (apply success coupon code: NGOAINGU)</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <strong class="text-black">VND <span id="sale">174,750</span></strong>
+                    </div>
+                  </div>
+                </div>
+                <hr>
                 <div class="row mb-5">
                   <div class="col-md-6">
                     <span class="text-black">Total</span>
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black">$230.00</strong>
+                    <strong class="text-black">VND <span id="total">699,000</span></strong>
                   </div>
                 </div>
 
@@ -221,9 +210,9 @@
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="images/about_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
-              <h3 class="font-weight-light  mb-0">Finding Your Perfect Shirts This Summer</h3>
-              <p>Promo from  July 15 &mdash; 25, 2019</p>
+              <img src="images/son.png" alt="Image placeholder" class="img-fluid rounded mb-4">
+              <h3 class="font-weight-light  mb-0">Finding Your Perfect Lip Balm</h3>
+              <p>Promo from  May 1 &mdash; 25, 2020</p>
             </a>
           </div>
           <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
@@ -260,9 +249,9 @@
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                <li class="email">emailaddress@domain.com</li>
+                <li class="address">41 Lê Duẩn, phường Hải Châu 1, quận Hải Châu, thành phố Đà Nẵng.</li>
+                <li class="phone"><a href="#">0236.3699324</a></li>
+                <li class="email">ngandang@gmail.com</li>
               </ul>
             </div>
 
@@ -300,6 +289,7 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-    
+  <script src="js/checkout.js">
+  </script>
   </body>
 </html>

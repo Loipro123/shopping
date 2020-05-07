@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
       #myHeader {
@@ -213,8 +213,10 @@
      flex-direction: column;
      min-width: 0;
      word-wrap: break-word;
+     /* border:none !important;
+     background-color: transparent !important; */
      background-color: #fff;
-     background-clip: border-box;
+     background-clip: border-box; 
      border: 1px solid #d2d2dc;
      border-radius: 11px;
      -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
@@ -292,19 +294,115 @@
 
  .profile-image {
      width: 100%;
-     height: 200px;
+     height: 100%;
      border-top-left-radius: 11px !important;
-     border-top-right-radius: 11px
+     border-top-right-radius: 11px;
  }
 
  .card-title {
-     font-size: 19px;
-     font-weight: 200
+     font-size: 21px;
+     font-weight: 500;
+     text-align: center;
+     color:black;
  }
-    </style>
+ /**/
+ body {
+    background-color: #eee
+}
+
+.carousel-inner img {
+    width: 100%
+}
+
+.carousel-item img {
+    width: 320px;
+    height: 240px !important
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#myCarousel .carousel-indicators>li {
+    width: 100%;
+}
+
+#myCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5
+}
+
+#myCarousel .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#myCarousel .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+/**/
+.bg-video{position:absolute;top:0;left:0;height:100%;width:100%;z-index:-1;opacity:.8;overflow:hidden}.bg-video__content{height:100%;width:100%;-o-object-fit:cover;object-fit:cover}
+.content {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding-bottom: 200px;
+  padding-left: 50px;
+}
+#myBtn {
+  width: 160px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(249, 249, 250,.3);;
+  color: rgba(7, 7, 7,.7);
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#myBtn:hover {
+  background: rgba(249, 249, 250,.5);
+  color: rgba(7, 7, 7,.9);}
+#myBtn:focus{
+  outline: none;
+  border:none;
+}
+/**/
+.list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 21.85em) {
+    .list {
+      font-size: 1.2rem; } }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+      @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        .list__item::before {
+          background-color: var(pink);
+          -webkit-mask-image: url(/images/arrow.svg);
+          -webkit-mask-size: cover;
+          mask-image: url(/images/arrow.svg);
+          mask-size: cover;
+          background-image: none; } }
+    @media only screen and (max-width: 25.625em) {
+      .list__item {
+        font-size: .8rem; } }
+/**/
+
+
+
+   </style>
   </head>
   <body>
-  
+    <embed src="images/sunshine.mp4" hidden="true" loop="false" >
   <div class="site-wrap">
     
     <div class="site-navbar bg-white py-2" id="myHeader">
@@ -322,19 +420,19 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">NganDang</a>
+              <a href="#" class="js-logo-clone">Lèvres</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li class=" active">
-                  <a href="index.html">Home</a>
+                  <a href="#">Home</a>
                 </li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Shop</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">New Arrivals</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -351,25 +449,27 @@
       </div>
     </div>
 
-     <div class="site-blocks-cover" data-aos="fade">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 ml-auto order-md-2 align-self-start">
-            <div class="site-block-cover-content">
-            <h2 class="sub-title" >#New Summer Collection 2019</h2>
-            <h1 style="color: black;">Arrivals Sales</h1>
-            <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 order-1 align-self-end">
-            <img src="images/model_3.png" alt="Image" class="img-fluid">
-          </div>
-        </div>
+     <div class="site-blocks-cover" data-aos="fade" style="padding: 0px;">
+      <!-- <audio autoplay>
+        <source src="images/music.mp3" type="audio/mpeg">
+      </audio> -->
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop id="myVideo">
+            <source src="images/video (1).mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+            Your browser is not supported!
+        </video>
+      </div>
+      <div class="content">
+        <h3 style="font-family: 'Dancing Script', cursive; font-size: 50px;font-weight: 700; color: rgba(249, 249, 250,.3);
+        ">Shunshine <span style="font-size: 18px;text-transform: lowercase;">  on my  </span> Mind</h3>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
     </div>
 
     <!---->
-    <div class="site-section" id="products-section">
+    <div class="site-section" id="products-section" style="background-color: rgba(219, 179, 227,.2);">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-6 text-center">
@@ -378,7 +478,7 @@
            
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="display: flex;align-items: center;justify-content: center;">
           <div class="col-lg-4 col-md-6 mb-5">
             <div class="product-item">
               <figure>
@@ -387,15 +487,15 @@
               </figure>
               
               <div class="px-4">
-                <h3 style="font-size: 25px;color: black;">Lèvres Lip Balm</h3>
+                <h3 style="font-size: 25px;color: black;" class="name">Lèvres Lip Balm</h3>
                 <div class="mb-3">
                   <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
                   <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
                 </div>
-                <p class="mb-4">Best selling lip balm in the country</p>
+                <p class="mb-4" style="color: red;font-size: 18px;">Get 25% off with coupon code <span style="font-weight: bold;">NGOAINGU</span></p>
                 <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Order now</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                  <a href="cart.html" class="btn btn-black mr-1 rounded-0">Order now</a>
+                  <a href="#feature" class="btn btn-black btn-outline-black ml-1 rounded-0">View Details</a>
                 </div>
               </div>
             </div>
@@ -415,40 +515,82 @@
               <input type="text" class="form-control rounded-0" placeholder="Enter your email address">
               <input type="submit" class="btn btn-white btn-outline-white rounded-0" value="Subscribe" style="border-left: none;">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi veniam doloremque ducimus tempora.</p>
+            <p>We will send you the newest Lip Balm. Please check your email !</p>
           </form>
         </div>
 
       </div>
     </div>
     <!---->
-    <div class="site-section bg-light">
+    <div class="site-section bg-light" id="feature">
       <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-6 text-center">
-            <h3 class="section-sub-title">Awesome Products</h3>
-            <h2 class="section-title mb-3">Featured Products</h2>
-          </div>
+        <div style="margin-bottom: 10px!important;" >
+            <h3 class="section-sub-title" style="text-align: center;">Featured Products</h3>
+            <h2 class="section-title mb-3" style="text-align: center; color: rgba(240, 115, 236,.8)">Lèvres Lip Balm</h2>
         </div>
         <div class="bg-white py-4 mb-4">
-          <div class="row mx-4 my-4 product-item-2 align-items-start">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <img src="images/son1.png" alt="Image" class="img-fluid">
+          <div class="row mx-5 my-5 product-item-2 align-items-start">
+            <div class="col-md-5 ml-auto mb-md-0" style="margin-left: 20px!important;padding: 0px!important; ">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" align="center" style="width: 100%;padding: 0px;">
+                <div class="carousel-inner" >
+                     <img src="images/son1.png" class="img-fluid rounded-0 carousel-item active" > 
+                     <img src="images/son.png" class="img-fluid rounded-0 carousel-item " >
+                     <img src="images/son5.jpg" class="img-fluid rounded-0 carousel-item " >
+                  </div>
+                  <ol class="carousel-indicators list-inline" style="margin-bottom: 110px;">
+                    <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel"> <img src="images/son1.png" class="img-fluid rounded"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel"> <img src="images/son.png" class="img-fluid rounded"> </a> </li>
+                    <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel"> <img src="images/son5.jpg" class="img-fluid rounded"> </a> </li>
+                  </ol>
+            </div>
+            
             </div>
            
-            <div class="col-md-5 ml-auto product-title-wrap">
-              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
-              
-              <div class="mb-4"> 
-                <h3 class="text-black font-weight-bold h5">Price:</h3>
-                <div class="price">VND <del class="mr-2">1,100,000</del> 699,000</div>
+            <div class="col-md-5 ml-auto product-title-wrap" style="margin-right: 35px!important;padding: 0px!important;box-sizing: border-box!important;">
+              <div id="introduction" style="font-family: 'Montserrat', sans-serif;color: black;">
+                <p class="mb-4" style="font-size: 17px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">I</span>f feels good to leave a light lip balm on overnight, so you can wake up feeling refreshed, rejuvenated and ready to start the day. We are proud to present our new improved product. It's perfectly designed for stressful days that really need a little extra recovery - so you feel best in the morning.<br> 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">W</span>e think a night lipgloss is about a balance of calming, restoring ingredients on your body. And its scent will never let you down.
+                  </p>
+                  <h3 style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">Ingredients:</h3>
+                  <ul class="list" style="font-family: 'Montserrat', sans-serif;color: black;margin-top: 15px;">
+                    <li class="list__item" style="margin-top: -10px;">- Sunflower oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Jojoba oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Shea butter</li>
+                    <li class="list__item" style="margin-top: -10px;">- Beeswax</li>
+                    <li class="list__item" style="margin-top: -10px;">- Coconut oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Evening primrose oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Tocopherol</li>
+                    <li class="list__item" style="margin-top: -10px;">- Lavender oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Wild orange oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- Roman chamomile oil</li>
+                    <li class="list__item" style="margin-top: -10px;">- CBD hemp oil (150mg)</li>
+                </ul>
+                <h3 style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">How to use:</h3>
+                
+                <h3 style="font-size: 17px;line-height: 25px;">- Apply  a thin layer of lip balm on your lips at night before going to bed for about 15 minutes and leave it on your lips until you wake up.</h3> 
+                <h3 style="font-size: 17px; line-height: 25px;">- Only use 1 time/day.</h3>
+                <h3 style="font-size: 17px; line-height: 25px;">- Preserving in a dry place, avoid high temperatures, sunshine.</h3>
+                
               </div>
-              <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
-                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
-              </p>
+              <div id="benefit" style="font-family: 'Montserrat', sans-serif;color: black;display: none;">
+                <h3 style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">Product Description</h3>
+                <p style="font-size: 17px; line-height: 25px;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Lèvres has brought luxury cosmetics with the new Limited Edition Bow Lipstick Case. This is an iconic symbol of fashion, power and elegance. This quintessential feminine accessory embodies many personalities – sweet, sexy and sophisticated.Finished in silver-plated and encrusted with over 300 brilliant diamond – the epitome of innovation and opulence. Exclusive beautiful butterfly design inspired by the beauty of woman. Luxurious design evokes classic, glamorous beauty and exhilarating energy.
+                  </p>
+                  <h3 style="font-family: 'Dancing Script';font-size: 25px;font-weight: 700;">Benefits</h3>
+                  <p style="font-size: 17px;line-height: 25px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Lèvres is perfectly designed for stressful days that really need a little extra recovery - so you feel best in the morning. The special ingredient is CBD oil. CBD essential oil is an essential oil extracted from the cannabis plant. Cannabidiol contains marijuana - one of the 100 different compounds found in plants to help improve sleep, quick, effective insomnia treatment. Moreover, CBD essential oil helps regulate the level of Serotonin release - a natural mood regulator in the body.<br>              
+                    &nbsp;&nbsp;&nbsp;&nbsp;Lèvres has the effect of maintaining the softness of the lips for a certain time. The product also treats and improves lip aging such as wrinkles, dark circles, dark spots, ... Especially, after using Lèvres, you will see the lip lines are more clearly shaped.</p>
+                  </div>
+              <div style="margin-top: 30px;">
+                <button class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block" id="btn1" style="background-color: black; margin-right: 10px;color: white;width: 180px!important;margin-bottom: 10px;">Introduction</button>
+                <button class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block" id="btn2" style="margin-right: 10px;width: 180px!important;">Details</button>
+              </div>
+              <!-- <div class="mb-4"> 
+                <h3 class="text-black font-weight-bold h5" style="font-size: 16px;">Price:</h3>
+                <div class="price">VND <del class="mr-2">1,100,000</del> 699,000</div>
+              </div> -->
+              
             </div>
           </div>
         </div>
@@ -465,40 +607,75 @@
       </div>
    <div class="items" style="margin-top: 0px;">
     <div class="card">
-        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/13626472_499894273550006_2269876737060561097_n.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=5wKNu0lq1N8AX8LLAI-&_nc_ht=scontent-mia3-2.xx&oh=a05369234378d74107832de01a1b04d8&oe=5ED00AAF"> </div>
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.15752-9/94977615_230953458135543_4343591149038993408_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_ohc=wMt4TyV1uVYAX-Vv60L&_nc_ht=scontent.ftpa1-1.fna&oh=2a8bfccd331c8693e4e0e8eaf6ce9a9c&oe=5ED09A5C"> </div>
         <div class="card-body">
-            <h5 class="card-title">Ngan Dang</h5>
-            <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+            <h5 class="card-title">Nguyen Thu Hang</h5>
+            <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Creative Director</h3>
+            <p class="card-text">“Live as if you were to die tomorrow. Learn as if you were to live forever.”
+
+              – Mahatma Gandhi</p>
         </div>
     </div>
     <div class="card">
-        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.15752-9/94930186_538561497066743_2650284349672390656_n.jpg?_nc_cat=108&_nc_sid=b96e70&_nc_ohc=8nAwTLIWl4oAX9jGXhu&_nc_ht=scontent.ftpa1-1.fna&oh=2b5c3b8378a441f86a09860b63f0da79&oe=5ED2FA2F"> </div>
         <div class="card-body">
-            <h5 class="card-title">Tikoh Amin</h5>
-            <p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
+            <h5 class="card-title">Vu Dang Mai Thao</h5>
+            <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Marketing Manager</h3>
+            <p class="card-text">“That which does not kill us makes us stronger.”
+
+              – Friedrich Nietzsche</p>
         </div>
     </div>
     <div class="card">
-        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.15752-9/95500303_266711087832298_7990797490410487808_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=g2Tw8qU06iUAX8kzJme&_nc_ht=scontent.ftpa1-2.fna&oh=f53606bc2ad79b81f765faf116db4768&oe=5ED39916"> </div>
+      <div class="card-body">
+          <h5 class="card-title">Mai Thi Huong Lan</h5>
+          <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Beauty Expert</h3>
+          <p class="card-text">“We must not allow other people’s limited perceptions to define us.”
+
+            – Virginia Satir</p>
+      </div>
+  </div>
+    <div class="card">
+        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://cdn.deguisetoi.fr/images/rep_art/moy/313/5/313550/feuille-en-azyme-mickey--18-4-x-25-7-cm_313550.jpg"> </div>
         <div class="card-body">
-            <h5 class="card-title">Malachi Lensing</h5>
-            <p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
+            <h5 class="card-title">Luu Thi Dieu Huong</h5>
+            <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Research & Development</h3>
+            <p class="card-text"> “Do what you can, with what you have, where you are.”
+
+              – Theodore Roosevelt</p>
         </div>
     </div>
     <div class="card">
-        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
-        <div class="card-body">
-            <h5 class="card-title">Christian Isla</h5>
-            <p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
-        </div>
+      <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t1.15752-9/95100665_829899607418420_1420166086434750464_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=92hcxFTg1HIAX8BpBoq&_nc_ht=scontent.ftpa1-1.fna&oh=ccbec094e6f1b713484725fde31c97da&oe=5ED2A447"> </div>
+      <div class="card-body">
+          <h5 class="card-title">Nguyen Thi Diem</h5>
+          <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Assistant</h3>
+          <p class="card-text"> “If you cannot do great things, do small things in a great way.”
+
+            – Napoleon Hill</p>
+      </div>
+  </div>
+  <div class="card">
+    <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.15752-9/96235937_267951564582680_2383331409008787456_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=lQetlCmwqQIAX_9Z2QH&_nc_ht=scontent.ftpa1-2.fna&oh=a4e8ccff456f12ad79221de593e6e6a6&oe=5ED758CD"> </div>
+    <div class="card-body">
+        <h5 class="card-title">Dang Thi Anh Ngan</h5>
+        <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Product Design Manager</h3>
+        <p class="card-text">“Be yourself; everyone else is already taken.”
+
+          – Oscar Wilde</p>
     </div>
-    <div class="card">
-        <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
-        <div class="card-body">
-            <h5 class="card-title">Lori Charles</h5>
-            <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
-        </div>
+</div>
+  <div class="card">
+    <div class="media media-2x1 gd-primary"> <img class="profile-image" src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t1.15752-9/95095453_573638096602786_3428471516776366080_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_ohc=ZIZc9niWOsUAX-o3h0t&_nc_ht=scontent.ftpa1-2.fna&oh=362f433f698eb9d660198d3f08b5d9e1&oe=5ED0AE51"> </div>
+    <div class="card-body">
+        <h5 class="card-title">Le Thi Ngoc Huyen</h5>
+        <h3 style="font-size: 16px;text-align: center;color:rgba(0, 0, 0, 0.7) ;margin-top: -8px;">Secretary</h3>
+        <p class="card-text">“Do not let what you cannot do interfere with what you can do.”
+
+          – John Wooden</p>
     </div>
+</div>
 </div>
 </div>
   <!---->
@@ -547,9 +724,9 @@
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                <li class="email">emailaddress@domain.com</li>
+                <li class="address">41 Lê Duẩn, phường Hải Châu 1, quận Hải Châu, thành phố Đà Nẵng.</li>
+                <li class="phone"><a href="#">0236.3699324</a></li>
+                <li class="email">ngandang@gmail.com</li>
               </ul>
             </div>
 
@@ -597,7 +774,7 @@ dots: true,
 infinite: true,
 speed: 800,
 autoplay: true,
-autoplaySpeed: 1800,
+autoplaySpeed: 3000,
 slidesToShow: 4,
 slidesToScroll: 4,
 responsive: [
@@ -629,5 +806,54 @@ slidesToScroll: 1
 });
 });
     </script>
+    <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
+      
+      // Get the button
+      var btn = document.getElementById("myBtn");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+
+      var doc1 = document.getElementById("introduction");
+      var doc2 = document.getElementById("benefit");
+
+      btn1.addEventListener("click", function(){
+          doc1.style.display= "block";
+          doc2.style.display= "none";
+          btn2.style.background= "white";
+          btn1.style.background= "black";
+          btn2.style.color= "black";
+          btn1.style.color= "white";
+
+         });
+         btn2.addEventListener("click", function(){
+          doc1.style.display= "none";
+          doc2.style.display= "block";
+          btn2.style.background= "black";
+          btn1.style.background= "white";
+          btn2.style.color= "white";
+          btn1.style.color= "black";
+         });
+         btn3.addEventListener("click", function(){
+          doc1.style.display= "none";
+          doc2.style.display= "none"
+          btn2.style.background= "white";
+          btn1.style.background= "white";
+          btn2.style.color= "black";
+          btn1.style.color= "black";
+         });
+      // Pause and play the video, and change the button text
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+      
   </body>
 </html>
